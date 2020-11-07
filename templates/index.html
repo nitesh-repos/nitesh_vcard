@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nitesh - vCard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="senior python developer" />
+	<meta name="keywords" content="python developer, backend developer, shell scripting, golang" />
+	<meta name="author" content="Nitesh" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    {% for filename in ['basic','layout','ionicons','magnific-popup','animate','owl.carousel','gradient','new-skin/new-skin','demos/demo-6-colors'] %}
+        <link rel="stylesheet" href="{{url_for('static/css',filename)}}.css"/>
+    {% endif %}
+
+	<!-- <link rel="stylesheet" href="css/blogs.css" /> -->
+<!--	<link rel="stylesheet" href="css/basic.css" />-->
+<!--	<link rel="stylesheet" href="css/layout.css" />    -->
+<!--	<link rel="stylesheet" href="css/ionicons.css" />-->
+<!--	<link rel="stylesheet" href="css/magnific-popup.css" />-->
+<!--	<link rel="stylesheet" href="css/animate.css" />-->
+<!--	<link rel="stylesheet" href="css/owl.carousel.css" />-->
+<!--	<link rel="stylesheet" href="css/gradient.css" />-->
+<!--	<link rel="stylesheet" href="css/new-skin/new-skin.css" />-->
+<!--	<link rel="stylesheet" href="css/demos/demo-6-colors.css" />-->
+	<link rel="shortcut icon" href="images/favicons/n.ico">
+</head>
+<body>
+	<div class="page new-skin">
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="background gradient">
+			<ul class="bg-bubbles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="container opened" data-animation-in="fadeInUp" data-animation-out="fadeOutUp">
+			<header class="header">
+				<div class="profile">
+					<div class="title">Nitesh Nanotkar</div>
+					<div class="subtitle subtitle-typed">
+						<div class="typing-title">
+							<p>Python developer</p>
+							<p>Shell script writer</p>
+							<p>Golang developer</p>
+							<p>Backend developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">About</span>
+							</a>
+						</li>
+						<li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Resume</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works-card">
+								<span class="icon ion-filing"></span>
+								<span class="link">Projects</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contacts-card">
+								<span class="icon ion-paper-airplane"></span>
+								<span class="link">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<div class="card-started" id="home-card">
+				<div class="profile no-photo">
+					<div class="slide" style="background-image: url(images/profile5.jpg);"></div>
+					<div class="title">Nitesh Nanotkar</div>
+					<div class="subtitle subtitle-typed">
+						<div class="typing-title">
+							<p>Python developer</p>
+							<p>Shell script writer</p>
+							<p>Golang developer</p>
+							<p>Backend developer</p>
+						</div>
+					</div>
+<!-- 					<div class="social">
+						<a target="_blank" href="https://github.com/nitesh-repos">
+							<span class="fa fa-github"></span>
+						</a>
+						<a target="_blank" href="https://www.linkedin.com/in/nitesh-nanotkar-49b450121">
+							<span class="fa fa-linkedin"></span>
+						</a>
+						<a target="_blank" href="https://www.hackerrank.com/niteshnanotkar">
+							<span class="fa fa-code"></span>
+						</a>
+					</div> -->
+					<div class="lnks">
+						<a href="cv.doc" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-android-download"></span>
+						</a>
+						<a href="#" class="lnk discover">
+							<span class="text">Contact Me</span>
+							<span class="ion ion-android-contact"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
+					<div class="content about">
+						<div class="title">About Me</div>
+						<div class="row">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										<strong>Hello! I’m Nitesh Nanotkar.</strong><br />
+Python developer from India. Developing python solutions since 2015.
+									</p>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>Age . . . . .</strong> 31</li>
+										<li><strong>Residence . . . . .</strong> India</li>
+										<li><strong>Freelance . . . . .</strong> Available</li>
+										<li><strong>Address . . . . .</strong> Pune, MH, India</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+					<div class="content services">
+						<div class="title">My Services</div>
+						<div class="row service-items border-line-v">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-balance-scale"></span>
+									</div>
+									<div class="name">
+										<span>
+											Python Software Development
+										</span>
+									</div>
+									<div class="desc">
+										<div >
+											Python developer experience of more than 5 years.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-bank"></span>
+									</div>
+									<div class="name">
+										<span>
+											Backend programming
+										</span>
+									</div>
+									<div class="desc">
+										<div >
+											5+ years of expertise in backend programming.
+											Sound knowledge of web sockets, server sent event(SSE), ajax forms, REST API.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-gavel"></span>
+									</div>
+									<div class="name">
+										<span>
+											Bulk email marketing solutions
+										</span>
+									</div>
+									<div class="desc">
+										<div >
+											Sound knowledge of tuning and warming email servers to enhance inbox email delivery.
+											Email header fixing, configuring SPF, DKIM and DMARC.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-bank"></span>
+									</div>
+									<div class="name">
+										<span>
+											Shell script writer
+										</span>
+									</div>
+									<div class="desc">
+										<div >
+											3+ years of expertise in shell scripting.
+											Expertise in bulk server configuation and management.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-money"></span>
+									</div>
+									<div class="name">
+										<span>
+											Browser automation and testing
+										</span>
+									</div>
+									<div class="desc">
+										<div >
+											Python selenium browser automation expert. Have successfully automated Gmail, Hotmail, Yahoo and Aol.
+											Remote portal creation to input test cases and report generation.
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+								<div class="service-item">
+									<div class="icon">
+										<span class="fa fa-money"></span>
+									</div>
+									<div class="name">
+										<span>
+											Virtual audio/video device cards
+										</span>
+									</div>
+									<div class="desc">
+										<div >
+											Record browser's audio/video; save or stream it in Docker image using virtual audio/video device cards.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="content clients">
+						<div class="title">Clients</div>
+						<div class="row client-items">
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image" style="margin-top: 15px;">
+										<a target="_blank" href="https://iconichelp.com">
+											<img src="images/clients/iconichelp.png" alt=""/>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image">
+										<a target="_blank" href="https://goletro.com">
+											<img src="images/clients/goletro.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image" style="margin-top: -5px;">
+										<a target="_blank" href="https://safemeet.in">
+											<img src="images/clients/safemeet.png" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="client-item">
+									<div class="image">
+										<a target="_blank" href="https://twitter.com/tycotyler?lang=en">
+											<img src="images/clients/tycotyler.jpeg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+					<div class="content resume">
+						<div class="title">Resume</div>
+						<div class="row">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-briefcase"></i></div>
+									<div class="name">Experience</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">2015 - Present</div>
+										<div class="name">Software Programmer</div>
+										<div class="company">Skylex Technologies Pvt. Ltd.</div>
+										<p>
+											Developer of email marketing software solutions.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2012 - 2014</div>
+										<div class="name">System Administrator</div>
+										<div class="company">TycoTyler</div>
+										<p>
+											System Administrator of Linux servers.
+										</p>
+									</div>
+									<div class="resume-item">
+										<div class="date">2011 - 2011</div>
+										<div class="name">Co-Founder</div>
+										<div class="company">JGemios</div>
+										<p>
+											Remained Co-Founder of software firm.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-university"></i></div>
+									<div class="name">Education</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h">
+										<div class="date">2011 - 2009</div>
+										<div class="name">Pune University</div>
+										<div class="company">Pune, India</div>
+										<p>
+											Graduted from Pune University with 70.2%.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2005 - 2008</div>
+										<div class="name">Polytechnic</div>
+										<div class="company">Mumbai, India</div>
+										<p>
+											Did Poyltechnic with 78.8%.
+										</p>
+									</div>
+									<div class="resume-item">
+										<div class="date">1995 - 2005</div>
+										<div class="name">St. Francis High School</div>
+										<div class="company">Amravati, India</div>
+										<p>
+											Completed my schooling with 75.33%.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="content skills">
+						<div class="title">Skills</div>
+						<div class="row">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list circles">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-code"></i></div>
+										<div class="name">Coding</div>
+									</div>
+									<ul>
+										<li>
+											<div class="name">Python</div>
+											<div class="progress p90">
+												<span>90%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">Bash scripting</div>
+											<div class="progress p80">
+												<span>80%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">Go</div>
+											<div class="progress p70">
+												<span>70%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">php</div>
+											<div class="progress p60">
+												<span>60%</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-list"></i></div>
+										<div class="name">Knowledge</div>
+									</div>
+									<ul>
+										<li>
+											<div class="name">Asyncio, MultiProcessing, MultiThreading, IPC</div>
+										</li>
+										<li>
+											<div class="name">Redis, Rabbitmq, Mongo, MySQL, SQLite</div>
+										</li>
+										<li>
+											<div class="name">Flask, Tornado, FastAPI, AioHttp</div>
+										</li>
+										<li>
+											<div class="name">Web sockets, Server Sent Events(SSE), Ajax</div>
+										</li>
+										<li>
+											<div class="name">Selenium, Docker</div>
+										</li>
+										<li>
+											<div class="name">DNS, SPF, DKIM, DMARC configuration</div>
+										</li>
+										<li>
+											<div class="name">PowerMTA for bulk email sending.</div>
+										</li>
+										<li>
+											<div class="name">Linux Administration</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-paint-brush"></i></div>
+										<div class="name">Design</div>
+									</div>
+									<ul>
+										<li class="border-line-h">
+											<div class="name">HTML / CSS</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Bootstrap 4</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Javascript</div>
+											<div class="progress">
+												<div class="percentage" style="width:75%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Jquery</div>
+											<div class="progress">
+												<div class="percentage" style="width:75%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list dotted">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-flag"></i></div>
+										<div class="name">Languages</div>
+									</div>
+									<ul>
+										<li class="border-line-h">
+											<div class="name">English</div>
+											<div class="progress">
+												<div class="percentage" style="width:80%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Hindi</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Marathi</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+<!-- 					<div class="content testimonials">
+						<div class="title">Testimonials</div>
+						<div class="row testimonials-items">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="revs-carousel default-revs">
+									<div class="owl-carousel">
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Mohanlal Malu</div>
+														<div class="company">Co-Founder, IconicHelp</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">aflkjal</div>
+														<div class="company">Co-Founder</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="revs-item">
+												<div class="text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+												<div class="user">
+													<div class="img"><img src="images/man1.jpg" alt="" /></div>
+													<div class="info">
+														<div class="name">Helen Floyd</div>
+														<div class="company">Art Director</div>
+													</div>
+													<div class="clear"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+					<div class="content works">
+						<div class="title">Recent Works</div>
+						<div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="pycode" />Python</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="bash_code" />Bash scripting</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="golang_code" />Golang</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="browser_automation" />Browser automation</label>
+							</div>
+						</div>
+						<div class="row grid-items border-line-v">
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item pycode browser_automation border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#ip_warming" class="has-popup-media">
+											<img src="images/works/mailbotize_ss.png" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#ip_warming" class="name has-popup-media">Mailbotize</a>
+										<div class="category">Python and Selenium</div>
+									</div>
+									<div id="ip_warming" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/mailbotize_ss.png" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Mailbotize</h1>
+													<div class="blog-detail">Python and Selenium</div>
+													<div class="blog-content">
+														<p>
+															Mailbotize is used in email marketing to enhance the reputation
+															of IP and associated domain of server so as to land sent promotional emails in inbox instead
+															of spam folder.<br>
+															This project focuses on Not spam technique to warm IP and domain.
+														</p>
+														<p>
+															First emails are sent to huge pool of pre-owned email accounts of reputed ISP's like Gmail, Hotmail,
+															Yahoo and Aol.<br>
+															Then system logins to those email accounts through browser and opens spam folder; searches for specific
+															keyword in mails and marks that particular mail as not spam.<br>
+															Then comes to inbox folder and chooses the same mail which was not spammed in spam folder and performs
+															rest of actions. Like "mark star/important","click on links in mail","reply/forward","archive/delete" etc.
+														</p>
+														<blockquote>
+														</blockquote>
+														<p>
+															System architecture, Frontend, Framework and Yahoo ISP automation written by me.
+														</p>
+
+														<p>System supports following features:</p>
+														<ul class="list-style">
+															<li>
+																Not Spam Machine(NSM)<br>
+																Adding and removal of windows machine on the go which opens browser to perform not spam.
+																You can specify number of parallel browsers to open.
+															</li>
+															<li>
+																Proxy support<br>
+																Adding authenticated and password less proxy on which to open browser.
+															</li>
+															<li>
+																NSM/Proxy grouping<br>
+																You can create proxy/NSM groups and share it to other users.
+															</li>
+															<li>
+																Role based access to portal.
+															</li>
+															<li>
+																Not Spam Profiling.<br>
+																You can create various combination of all possible tasks to perform in ISP portal and can specify counts as well as
+																percentage of those tasks and then save it as "NSProfile".<br>
+																This helps in reduced amount of time to insert email accounts to perform actions every time. It also helps in keeping track of test cases used.<br>
+																You can also share/delete/edit your NSProfile.
+															</li>
+															<li>
+																Compose/ Forward/ Reply mail
+															</li>
+															<li>
+																Click on links in mail.
+															</li>
+															<li>
+																Task scheduling.<br>
+																You can specify in which time slot of EST time zone to perform actions.<br>
+																How many times to perform actions and delay between every action.
+															</li>
+															<li>
+																Continuous/ Non-Continuous modes.<br>
+																In continuous mode once actions are performed on email account; system closes browser, sets next time
+																to perform action again, opens browser after set delayed time and performs action again. This happens
+																in endless manner.<br>
+																In non continuous mode the browser is opened only once.
+															</li>
+															<li>
+																Browser profile save.<br>
+																If enabled then system saves the opened browser profile. Creates new profile if not exists.
+																This saves time to login email account again as it is already logged in.
+															</li>
+															<li>
+																Control live actions.<br>
+																Send "resume/pause/pause_browser/only_login/end" commands to specific email account/proxy browser/
+																NSM's user.<br>
+																Change NSProfile of email accounts.<br>
+																Change browser handler if xpath of element changes.
+															</li>
+															<li>
+																Choose browser.<br>
+																You can choose between "Chromium/ Chrome/ Firefox" browser to use to perform actions on email account.
+															</li>
+															<li>
+																Proxy checker.<br>
+																Check is proxy is black listed.<br>
+																Checks if proxy is not connecting.<br>
+																Checks if proxy is banned by ISP.<br>
+															</li>
+															<li>
+																Monitor live resource usage<br>
+																Shows live CPU and RAM % being used of particular every Not Spam Machine.
+															</li>
+															<li>
+																Proxy report.<br>
+																Shows live proxy used/disabled/listed/inactive/clean count.
+															</li>
+															<li>
+																Email account live logs<br>
+																Get live logs of email accounts and actions being performed on it.
+																For eg. <br>
+																"3 mails marked as not spam"<br>
+																"1 mail moved to trash"<br>
+																"5 mails read"<br>
+																"Opened inbox folder"<br>
+																"Password of email account changed successfully"<br>
+																"Could not login to account. Reason: Password not working"
+															</li>
+															<li>
+																Report download.<br>
+																Download detailed report of Email accounts, Proxy and NSM.
+															</li>
+														</ul>
+														<p>Technology/languages used:</p>
+														<ul class="list-style">
+															<li>Rabbitmq, Redis, Mongo DB</li>
+															<li>Custom written Redis Cache</li>
+															<li>Selenium</li>
+															<li>Custom written Selenium wrapper</li>
+															<li>Asynchronous and MultiThreading</li>
+															<li>Python</li>
+															<li>Server Sent Event(SSE)</li>
+															<li>Bootstrap 4</li>
+															<li>HTML, Javascript, Jquery</li>
+															<li>Ajax, Json</li>
+															<li>Nginx, Supervisor</li>
+															<li>Tornado</li>
+															<li>Pyinstaller</li>
+															<li>chromedriver, geckodriver, portable chromium</li>
+														</ul>
+													</div>
+													<a href="https://mailbotize.admailservice.com/demo/" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+													<p>User: "arnas@mailbotize.com"; password: "password@123"; ISP to choose: "Gmail"</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item pycode bash_code border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#wrk_nslookup" class="has-popup-media">
+											<img src="images/works/nslookup_ss.png" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#wrk_nslookup" class="name has-popup-media">Server testing tool</a>
+										<div class="category">Python and Bash scripting</div>
+									</div>
+									<div id="wrk_nslookup" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/nslookup_ss.png" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Server testing tool</h1>
+													<div class="blog-detail">Python and Bash scripting</div>
+													<div class="blog-content">
+														<p>
+															Uses Nginx at front as load balancer. Behind it Tornado works
+															in Supervisor daemon.
+														</p>
+														<p>It has following features:</p>
+														<ul class="list-style">
+															<li>
+																Know your public IP
+															</li>
+															<li>
+																Forward and Reverse DNS resolver<br>
+																Resolves popular DNS records including reverse IP resolver.
+																You can customize it to choose your own DNS server.
+															</li>
+															<li>
+																DNS trace<br>
+																Can check if delegation of DNS is working properly using
+																trace DNS feature.
+															</li>
+															<li>
+																Ping<br>
+																Unlike other portal you get live ping report. Can also provide
+																number of packet count to send.<br>
+																This uses "websocket" feature to provide live ping report.
+															</li>
+															<li>
+																Check port<br>
+																Check incoming port of your server to see if it is blocked or open for public.
+															</li>
+														</ul>
+														<p>
+															All forms are handled by "Ajax".<br>
+															Tornado checks for POST request, validates and runs the "Bash shell script" of that particular
+															task in executor("Non blocking nature").<br>
+															Portal has been tested for 1000 connections simultaneously.
+														</p>
+														<p>Technology/languages used:</p>
+														<ul class="list-style">
+															<li>Bootstrap 4</li>
+															<li>HTML, Javascript, Jquery</li>
+															<li>Ajax, Json</li>
+															<li>websockets</li>
+															<li>Nginx, Supervisor</li>
+															<li>Tornado</li>
+															<li>Python, Bash shell script</li>
+														</ul>
+														<blockquote>
+														</blockquote>
+													</div>
+													<a href="https://nslookup.info" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item pycode golang_code border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#senderviz" class="has-popup-media">
+											<img src="images/works/senderviz_ss.png" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#senderviz" class="name has-popup-media">Senderviz</a>
+										<div class="category">Python and Golang</div>
+									</div>
+									<div id="senderviz" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/senderviz_ss.png" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Senderviz</h1>
+													<div class="blog-detail">Python and Golang</div>
+													<div class="blog-content">
+														<p>Senderviz is the software which is capable of sending bulk promotional and transactional emails. Easily bypassing speed of 250k emails/hour from single IP(*conditions apply).
+														It's primarily designed for layman who wants to send bulk emails at very low cost without much of technical knowledge.</p>
+														<p>90% frontend developed; 10% backend developed</p>
+														<p>Key features which makes Senderviz standout from rest of the softwares in market:</p>
+														<ul class="list-style">
+															<li>Very easy to use GUI</li>
+															<li>No need to take ssh access to configure rest servers.</li>
+															<li>Centralized portal for all email sending machines.</li>
+															<li>Full control over mail queue.</li>
+															<li>Dynamic template creation for personalized transactional email.</li>
+															<li>Fine tuned job scheduling.</li>
+															<li>Live mail queue management.</li>
+															<li>Live bounce/delivered statistics on portal.</li>
+															<li>Provision to instantly pause mail queue on bounce detection.</li>
+														</ul>
+														<blockquote> </blockquote>
+														<p>Advance features:</p>
+														<ul class="list-style">
+															<li>Customize setting to see report and statistics of your search criteria.</li>
+															<li>Email sent graph of last 59 minutes.</li>
+															<li>Hardbounce, delivered, other errors count live report.</li>
+															<li>Control mail queue by any search criteria.</li>
+															<li>Domain IP group creation. Can group any domain IP of any server together.</li>
+															<li>User role based portal access. Feature can to used to become reseller.</li>
+															<li>Create custom ISP rules and attach to domain IP groups.</li>
+															<li>Create html email template from scratch or copy existing html content to create template.<br>
+																Edit in word view or html code editor.<br>
+																Use custom variables for dynamic content creation.</li>
+															<li>Adjust sequence of headers/ add custom headers/ remove headers from email draft.</li>
+															<li>Support for text, csv and excel list file upload.</li>
+															<li>Email attachment file upload and feature to use them dynamically in emails.</li>
+															<li>Select any of "html only/ text only/ multi part" type of email to send.</li>
+															<li>Feature to incorporate image in mail itself or to use as hyperlink.</li>
+															<li>Feature to create custom image link or redirection link for opens/clicks tracking.</li>
+															<li>Add/remove MTA server on the go. No need to restart existing MTA servers. That means current mail queue will not restart.</li>
+															<li>Change any ISP settings without affecting current mail queue.</li>
+															<li>Remove or add any domain IP from group without a need to restart MTA.</li>
+															<li>Start/stop/restart/reload/configure/uninstall/clear DNS cache of any MTA server from portal itself.</li>
+															<li>Activate/Deactivate any MTA without affecting rest mail queue.</li>
+															<li>Use previously saved job's settings to send bulk email again.</li>
+															<li>Randomize email list file content or randomize all select files to send emails.</li>
+															<li>Advanced sending pattern:<br>
+																Customize mail burst size.<br>
+																Send mail to single user from multiple domains(Used for IP warming).<br>
+																Select concurrency between "simple round robin" or "multi-threaded".
+															</li>
+															<li>Advanced scheduling:<br>
+																Simply start job now.<br>
+																Day wise sending. Set start and end time of day.<br>
+																Send by hourly limits and specify delays in between.
+															</li>
+														</ul>
+														<p>ISP configuration features:</p>
+														<ul class="list-style">
+															<li>Set all possible limits of no.of mail and recipient.</li>
+															<li>Choose between TLS/ STARTTLS/ none.</li>
+															<li>Choose MX connection type as old or new 8 bit with HELO/EHLO.</li>
+															<li>Enable / Disable auto DKIM signing.</li>
+															<li>Choose which email headers to DKIM sign.</li>
+															<li>TLS certificate support in case of using TLS connection to MX.</li>
+														</ul>
+														<p>Technology/languages used:</p>
+														<ul class="list-style">
+															<li>Golang for backend</li>
+															<li>Python for frontend</li>
+															<li>Custom in memory DB</li>
+															<li>Bootstrap 4</li>
+															<li>HTML, Javascript, Jquery</li>
+															<li>Ajax, Json</li>
+															<li>Flask. Will switch to Golang's Gin Gonic later.</li>
+														</ul>
+													</div>
+													<a href="https://admailservice.com/demo/senderviz" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item pycode bash_code border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#server_panel" class="has-popup-media">
+											<img src="images/works/techxyo_ss.png" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#server_panel" class="name has-popup-media">Server Panel</a>
+										<div class="category">Python and Bash scripting</div>
+									</div>
+									<div id="server_panel" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/techxyo_ss.png" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Server Panel</h1>
+													<div class="blog-detail">Python and Bash scripting</div>
+													<div class="blog-content">
+														<p>Server Panel is the Techxyo's email server configuration portal.<br>
+															Input SSH credentials of any linux server and select among various below mentioned actions to perform:<br>
+															<ul class="list-style">
+																<li>upload</li>
+																<li>configure</li>
+																<li>encrypt_files</li>
+																<li>decrypt_files</li>
+																<li>verify_DNS</li>
+																<li>change_credentials</li>
+																<li>remove</li>
+																<li>clean_server</li>
+																<li>add_to_master</li>
+																<li>kill_task</li>
+																<li>restart_services</li>
+															</ul>
+														</p>
+														<p>You can check the LIVE console log of any server being configured in the portal from SERVER_LOG tab.</p>
+														<p>The system is designed in a non blocking manner. Thus inserting next server will start it's configuration immediately.</p>
+														<p>There is custom written wrapper over "paramiko" python library which handles SSH, SFTP and error log management. Plus sending LIVE console log to portal user.</p>
+														<p>Multiple BASH shell scripts has been written to configure following things on server:<br>
+															Mysql install and configure with provided DB import and auto user creation.<br>
+															DNS install and configure with provided Domain-IP resolution.<br>
+															DKIM private key configuration and adding public keys to DNS records.<br>
+															PowerMTA configuration and adding private DKIM keys.<br>
+															Cronjob configure.<br>
+															Email sending proprietary software configuration.<br>
+															Adding slave SMTPs to master SMTP.<br>
+															Apache with SSL configuration.<br>
+														</p>
+														<p>Technology/languages used:</p>
+														<ul class="list-style">
+															<li>Python for frontend, web sockets and paramiko wrapper</li>
+															<li>Bootstrap 4</li>
+															<li>HTML, Javascript, Jquery</li>
+															<li>Ajax, Json</li>
+															<li>Bash shell scripting.</li>
+														</ul>
+													</div>
+													<a href="https://techxyo.com:9901/" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item pycode browser_automation border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#browser_rec" class="has-popup-media">
+											<img src="images/works/safemeet_ss.png" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#browser_rec" class="name has-popup-media">Browser recorder</a>
+										<div class="category">Python, Docker, ffmpeg</div>
+									</div>
+									<div id="browser_rec" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/safemeet_ss.png" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Browser recorder</h1>
+													<div class="blog-detail">Python, Docker, ffmpeg</div>
+													<div class="blog-content">
+														<p>Safemeet.in is an audio/video and chatting platform similar to Zoom, Google meet or Skype.<br>
+															I had a challenge to reduce long delay which occurs when user hits record button to start recording. Plus requirement was also to minimize CPU utilization.<br>
+														</p>
+														<p>I came up with a solution which takes less than 1 second to start recording which previously was 7 seconds. Plus does not require any of audio/video card attached to Docker in Kubernetes environment which was required before.</p>
+														<p>The recording is saved to S3 and also live streamed.</p>
+														<p>Sorry the exact internal system which I implemented cannot be disclosed publicly.</p>
+														<p>Technology/languages used:</p>
+														<ul class="list-style">
+															<li>Python</li>
+															<li>FastAPI</li>
+															<li>Docker</li>
+															<li>Kubernetes</li>
+															<li>ffmpeg</li>
+															<li>xvfb</li>
+															<li>Pulseaudio</li>
+															<li>Bash scripting</li>
+														</ul>
+													</div>
+													<a href="https://safemeet.in" class="button">
+														<span class="text">View Project</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-inner contacts" id="contacts-card">
+				<div class="card-wrap">
+					<div class="content contacts">
+						<div class="title">Get in Touch</div>
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<!-- <div class="map" id="map"></div> -->
+								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3282.686045544689!2d73.95287021372972!3d18.488206263627603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1604639228037!5m2!1sen!2sin" width="700" height="280" frameborder="0" style="border:0;margin-bottom: 20px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+								<div class="info-list">
+									<ul>
+										<li><strong>Address . . . . .</strong> Pune, MH, India</li>
+										<li><strong>Email . . . . .</strong> reachme@nitesh.biz</li>
+										<li><strong>Phone . . . . .</strong> +91 8600 700 744</li>
+										<li><strong>Freelance . . . . .</strong> Available</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="content contacts">
+						<div class="title">Contact Form</div>
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="contact_form">
+									<form id="cform" method="post">
+										<div class="row">
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="name" placeholder="Full Name" />
+												</div>
+											</div>
+											<div class="col col-d-6 col-t-6 col-m-12">
+												<div class="group-val">
+													<input type="text" name="email" placeholder="Email Address" />
+												</div>
+											</div>
+											<div class="col col-d-12 col-t-12 col-m-12">
+												<div class="group-val">
+													<textarea name="message" placeholder="Your Message"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="align-left">
+											<a href="#" class="button" onclick="$('#cform').submit(); return false;">
+												<span class="text">Send Message</span>
+												<span class="arrow"></span>
+											</a>
+										</div>
+									</form>
+									<div class="alert-success">
+										<p>Thank you for showing interest!<br>I will get back to you as soon as possible.</p>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s_overlay"></div>
+		<div class="content-sidebar">
+			<div class="sidebar-wrap search-form">
+				<aside id="secondary" class="widget-area">
+					<section id="search-2" class="widget widget_search">
+						<label>
+							<span class="screen-reader-text">Search for:</span>
+							<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+						</label>
+						<input type="submit" class="search-submit" value="Search">
+					</section>
+					<section class="widget widget_recent_entries">
+						<h2 class="widget-title">
+							<span class="widget-title-span"><span class="first-word">Recent</span> Posts</span>
+						</h2>
+						<ul>
+							<li>
+								<a href="#">Creativity Is More Than</a>
+							</li>
+							<li>
+								<a href="#">Designing the perfect</a>
+							</li>
+							<li>
+								<a href="#">Music Player Design</a>
+							</li>
+							<li>
+								<a href="#">A Song And Dance Act</a>
+							</li>
+							<li>
+								<a href="#">By spite about do of allow</a>
+							</li>
+						</ul>
+					</section>
+					<section class="widget widget_recent_comments">
+						<h2 class="widget-title">
+							<span class="widget-title-span"><span class="first-word">Recent</span> Comments</span>
+						</h2>
+						<ul>
+							<li class="recentcomments">
+								<span class="comment-author-link">JOHN SMITH</span> on <a href="#">Creativity Is More Than</a>
+							</li>
+							<li class="recentcomments">
+								<span class="comment-author-link">ADAM SMITH</span> on <a href="#">Creativity Is More Than</a>
+							</li>
+							<li class="recentcomments">
+								<span class="comment-author-link">admin</span> on <a href="#">Designing the perfect</a>
+							</li>
+							<li class="recentcomments">
+								<span class="comment-author-link">admin</span> on <a href=#">Designing the perfect</a>
+							</li>
+							<li class="recentcomments">
+								<span class="comment-author-link">James</span> on <a href="#">Designing the perfect</a>
+							</li>
+						</ul>
+					</section>
+					<section class="widget widget_archive">
+						<h2 class="widget-title">
+							<span class="widget-title-span">
+								<span class="first-letter">Archives</span>
+							</span>
+						</h2>
+						<ul>
+							<li>
+								<a href="#">November 2018</a>
+							</li>
+						</ul>
+					</section>
+					<section class="widget widget_categories">
+						<h2 class="widget-title">
+							<span class="widget-title-span"><span class="first-letter">Categories</span></span>
+						</h2>
+						<ul>
+							<li class="cat-item cat-item-2">
+								<a href="#">Design</a>
+							</li>
+							<li class="cat-item cat-item-3">
+								<a href="#">Music</a>
+							</li>
+						</ul>
+					</section>
+					<section class="widget widget_meta">
+						<h2 class="widget-title">
+							<span class="widget-title-span"><span class="first-letter">Meta</span></span>
+						</h2>
+						<ul>
+							<li><a href="#">Log in</a></li>
+							<li><a href="#">Entries feed</a></li>
+							<li><a href="#">Comments feed</a></li>
+							<li><a href="#">WordPress.org</a></li>
+						</ul>
+					</section>
+				</aside>
+			</div>
+			<span class="close"></span>
+		</div>
+	</div>
+
+	{% for filename in ['jquery.min','jquery.validate','jquery.magnific-popup','imagesloaded.pkgd','isotope.pkgd','jquery.slimscroll','owl.carousel','typed','scripts'] %}
+		<script src="{{url_for('static/js',filename)}}.js"></script>
+    {% endif %}
+
+<!--	<script src="js/jquery.min.js"></script>-->
+<!--	<script src="js/jquery.validate.js"></script>-->
+<!--	<script src="js/jquery.magnific-popup.js"></script>-->
+<!--	<script src="js/imagesloaded.pkgd.js"></script>-->
+<!--	<script src="js/isotope.pkgd.js"></script>-->
+<!--	<script src="js/jquery.slimscroll.js"></script>-->
+<!--	<script src="js/owl.carousel.js"></script>-->
+<!--	<script src="js/typed.js"></script>-->
+	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
+<!--	<script src="js/scripts.js"></script>-->
+</body>
+</html>
