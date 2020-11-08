@@ -10,8 +10,8 @@
 	<meta name="author" content="Nitesh" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    {% for filename in ['basic','layout','ionicons','magnific-popup','animate','owl.carousel','gradient','new-skin/new-skin','demos/demo-6-colors'] %}
-        <link rel="stylesheet" href="{{url_for('static',filename=f'css/{filename}')}}.css"/>
+    {% for fname in ['basic','layout','ionicons','magnific-popup','animate','owl.carousel','gradient','new-skin/new-skin','demos/demo-6-colors'] %}
+        <link rel="stylesheet" href="{{url_for('static',filename='css/%s.css'%(fname))}}"/>
     {% endfor %}
 
 	<!-- <link rel="stylesheet" href="css/blogs.css" /> -->
@@ -1239,8 +1239,8 @@ Python developer from India. Developing python solutions since 2015.
 		</div>
 	</div>
 
-	{% for filename in ['jquery.min','jquery.validate','jquery.magnific-popup','imagesloaded.pkgd','isotope.pkgd','jquery.slimscroll','owl.carousel','typed','scripts'] %}
-		<script src="{{url_for('static',filename=f'js/{filename}')}}.js"></script>
+	{% for fname in ['jquery.min','jquery.validate','jquery.magnific-popup','imagesloaded.pkgd','isotope.pkgd','jquery.slimscroll','owl.carousel','typed','scripts'] %}
+		<script src="{{url_for('static',filename='js/%s.js'%(fname))index}}"></script>
     {% endfor %}/
 
 <!--	<script src="js/jquery.min.js"></script>-->
