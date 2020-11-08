@@ -12,7 +12,7 @@
 
     {% for filename in ['basic','layout','ionicons','magnific-popup','animate','owl.carousel','gradient','new-skin/new-skin','demos/demo-6-colors'] %}
         <link rel="stylesheet" href="{{url_for('static/css',filename)}}.css"/>
-    {% endif %}
+    {% endfor %}
 
 	<!-- <link rel="stylesheet" href="css/blogs.css" /> -->
 <!--	<link rel="stylesheet" href="css/basic.css" />-->
@@ -1241,7 +1241,7 @@ Python developer from India. Developing python solutions since 2015.
 
 	{% for filename in ['jquery.min','jquery.validate','jquery.magnific-popup','imagesloaded.pkgd','isotope.pkgd','jquery.slimscroll','owl.carousel','typed','scripts'] %}
 		<script src="{{url_for('static/js',filename)}}.js"></script>
-    {% endif %}
+    {% endfor %}
 
 <!--	<script src="js/jquery.min.js"></script>-->
 <!--	<script src="js/jquery.validate.js"></script>-->
