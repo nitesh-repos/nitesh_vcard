@@ -389,21 +389,27 @@ $(function () {
 		success: "valid",
 		submitHandler: function() {
 			$.ajax({
-				url: '/',
+				url: '',
 				type: 'post',
 				dataType: 'json',
 				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
-				beforeSend: function() {
-				
-				},
-				complete: function() {
-				
-				},
-				success: function(data) {
+//				beforeSend: function() {
+//				    console.log("sending message")
+//				},
+//				complete: function() {
+//				    console.log("message sent")
+//				},
+				success: function(response) {
+				    console.log("message sent successfully")
 					$('#cform').fadeOut();
 					$('.alert-success').delay(1000).fadeIn();
+					console.log("cform fadeout and alert success")
+				},
+				error: function(){
+				    console.log('error submitting form')
 				}
 			});
+
 		}
 	});
 	

@@ -3,9 +3,11 @@ import sqlite3
 app = Flask(__name__)
 
 # app.route(rule, options)
+# ,methods=['GET','POST']
 @app.route('/',methods=['GET','POST'])
 def main_render():
     if request.method == 'POST':
+        msg = '{"status":"fail"}'
         name = request.form['name']
         email = request.form['email']
         message = request.form['message']
@@ -15,15 +17,15 @@ def main_render():
                 cur.execute('CREATE TABLE IF NOT EXISTS usr_request (entryID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, msg TEXT)')
                 cur.execute(f'INSERT INTO usr_request (name, email, msg) VALUES ("{name}","{email}","{message}")')
                 conn.commit()
-                msg = "Record successfully added"
+                msg = '{"status":"success"}'
                 print(msg)
         except:
             conn.rollback()
-            msg = "error in insert operation"
+            msg = '{"status":"fail","reason":"error in insert operation"}'
             print(msg)
         finally:
             conn.close()
-            return
+        return msg
     else:
         return render_template('index.html')
         # return redirect(url_for('success',name = user))
