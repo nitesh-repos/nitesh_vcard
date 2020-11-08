@@ -9,17 +9,18 @@ def main_render():
         name = request.form['name']
         email = request.form['email']
         message = request.form['message']
-        conn = sqlite3.connect('request.db')
         try:
-            with sqlite3.connect("database.db") as conn:
+            with sqlite3.connect("usr_req_db.db") as conn:
                 cur = conn.cursor()
                 cur.execute('CREATE TABLE IF NOT EXISTS usr_request (entryID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, msg TEXT)')
                 cur.execute(f'INSERT INTO usr_request (name, email, msg) VALUES ("{name}","{email}","{message}")')
                 conn.commit()
                 msg = "Record successfully added"
+                print(msg)
         except:
             conn.rollback()
             msg = "error in insert operation"
+            print(msg)
         finally:
             conn.close()
     else:
@@ -29,5 +30,6 @@ def main_render():
 if __name__ == '__main__':
     # app.run()
     # app.debug = True
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run('207.180.211.78', 8089, debug=True)
     # app.add_url_rule(‘ / ’, ‘hello’, hello_world)
