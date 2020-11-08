@@ -23,6 +23,7 @@ def main_render():
             print(msg)
         finally:
             conn.close()
+            return
     else:
         return render_template('index.html')
         # return redirect(url_for('success',name = user))
