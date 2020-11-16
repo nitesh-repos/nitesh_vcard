@@ -30,9 +30,16 @@ def main_render():
         return render_template('index.html')
         # return redirect(url_for('success',name = user))
 
+@app.route('/download')
+def downloadFile ():
+    #For windows you need to use drive name [ex: F:/Example.pdf]
+    path = "/srv/www/flask_nitesh/nitesh_vcard/downloads/cv.doc"
+    return send_file(path, as_attachment=True)
+
+
 if __name__ == '__main__':
     # app.run()
     # app.debug = True
     # app.run(debug=True)
-    app.run('207.180.211.78', 8089, debug=True)
+    app.run('127.0.0.1', 8089, debug=True)
     # app.add_url_rule(‘ / ’, ‘hello’, hello_world)
