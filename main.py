@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 import sqlite3
 app = Flask(__name__)
 
@@ -35,7 +35,6 @@ def downloadFile ():
     #For windows you need to use drive name [ex: F:/Example.pdf]
     path = "/srv/www/flask_nitesh/nitesh_vcard/downloads/cv.doc"
     return send_file(path, as_attachment=True)
-
 
 if __name__ == '__main__':
     # app.run()
